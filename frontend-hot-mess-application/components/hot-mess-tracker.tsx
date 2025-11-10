@@ -15,7 +15,7 @@ interface SliderData {
 
 const sarcasticMessages = [
   { min: 0, max: 20, message: "Wow, look at you being all responsible. Boring. 😴" },
-  { min: 21, max: 40, message: "A little chaos never hurt anyone... right? 🤷‍♀️" },
+  { min: 21, max: 40, message: "A little madness never hurt anyone... right? 🤷‍♀️" },
   { min: 41, max: 60, message: "We're entering hot mess territory. Iconic. 💅" },
   { min: 61, max: 80, message: "At least you're consistently chaotic. We love that for you 💖" },
   { min: 81, max: 100, message: "LEGENDARY chaos energy. You're a whole disaster and we're here for it 🔥✨" },
