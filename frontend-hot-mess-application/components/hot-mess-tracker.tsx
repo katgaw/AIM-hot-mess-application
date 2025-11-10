@@ -80,7 +80,7 @@ export default function HotMessTracker() {
       <Card className="bg-white/90 backdrop-blur-sm border-[#cc7178] border-2 shadow-2xl p-8">
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-[#89023e] mb-2 text-balance">Hot Mess Tracker 💅</h1>
-          <p className="text-[#cc7178] text-lg">How chaotic is your day? Let's find out.</p>
+          <p className="text-[#cc7178] text-lg">How crazy is your day? Let's find out.</p>
         </div>
 
         {/* Animated Emoji Face */}
