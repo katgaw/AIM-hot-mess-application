@@ -79,8 +79,8 @@ export default function HotMessTracker() {
     <div className="w-full max-w-2xl">
       <Card className="bg-white/90 backdrop-blur-sm border-[#cc7178] border-2 shadow-2xl p-8">
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#89023e] mb-2 text-balance">Hot Mess Tracker 💅</h1>
-          <p className="text-[#cc7178] text-lg">How crazy is your day? Let's find out.</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#7e22ce] mb-2 text-balance">Hot Mess Tracker 💅</h1>
+          <p className="text-[#7e22ce] text-lg">How crazy is your day? Let's find out.</p>
         </div>
 
         {/* Animated Emoji Face */}
@@ -97,8 +97,8 @@ export default function HotMessTracker() {
 
         {/* Hot Mess Score */}
         <div className="text-center mb-8">
-          <div className="text-6xl font-bold text-[#89023e] mb-2">{Math.round(totalScore)}</div>
-          <div className="text-sm text-[#cc7178] uppercase tracking-wider font-semibold">Hot Mess Score</div>
+          <div className="text-6xl font-bold text-[#7e22ce] mb-2">{Math.round(totalScore)}</div>
+          <div className="text-sm text-[#7e22ce] uppercase tracking-wider font-semibold">Hot Mess Score</div>
         </div>
 
         {/* Sliders */}
@@ -106,11 +106,11 @@ export default function HotMessTracker() {
           {sliders.map((slider) => (
             <div key={slider.id} className="space-y-2">
               <div className="flex items-center justify-between">
-                <label className="text-[#89023e] font-medium flex items-center gap-2">
+                <label className="text-[#7e22ce] font-medium flex items-center gap-2">
                   <span className="text-xl">{slider.emoji}</span>
                   {slider.label}
                 </label>
-                <span className="text-[#cc7178] font-bold min-w-[3ch] text-right">{slider.value}</span>
+                <span className="text-[#7e22ce] font-bold min-w-[3ch] text-right">{slider.value}</span>
               </div>
               <Slider
                 value={[slider.value]}
@@ -125,7 +125,7 @@ export default function HotMessTracker() {
 
         {/* Sarcastic Message */}
         <div className="bg-[#ffd9da] border-2 border-[#cc7178] rounded-lg p-6 mb-6 text-center">
-          <p className="text-[#89023e] text-lg font-medium text-balance">{currentMessage}</p>
+          <p className="text-[#7e22ce] text-lg font-medium text-balance">{currentMessage}</p>
         </div>
 
         {/* Action Buttons */}
@@ -133,7 +133,7 @@ export default function HotMessTracker() {
           <Button
             variant="outline"
             onClick={handleReset}
-            className="border-2 border-[#cc7178] text-[#89023e] hover:bg-[#ffd9da] hover:text-[#89023e] bg-transparent"
+            className="border-2 border-[#cc7178] text-[#7e22ce] hover:bg-[#ffd9da] hover:text-[#7e22ce] bg-transparent"
           >
             <RotateCcw className="mr-2 h-4 w-4" />
             Reset
@@ -141,7 +141,7 @@ export default function HotMessTracker() {
           <Button
             variant="outline"
             onClick={handleSave}
-            className="border-2 border-[#cc7178] text-[#89023e] hover:bg-[#ffd9da] hover:text-[#89023e] bg-transparent"
+            className="border-2 border-[#cc7178] text-[#7e22ce] hover:bg-[#ffd9da] hover:text-[#7e22ce] bg-transparent"
           >
             <Save className="mr-2 h-4 w-4" />
             Save Score
@@ -150,7 +150,7 @@ export default function HotMessTracker() {
 
         {/* Save Confirmation */}
         {showSaved && (
-          <div className="mt-4 text-center text-[#89023e] font-medium animate-in fade-in slide-in-from-bottom-2">
+          <div className="mt-4 text-center text-[#7e22ce] font-medium animate-in fade-in slide-in-from-bottom-2">
             ✨ Score saved! Your chaos is documented.
           </div>
         )}
@@ -158,12 +158,12 @@ export default function HotMessTracker() {
         {/* Saved Scores History */}
         {savedScores.length > 0 && (
           <div className="mt-8 pt-6 border-t-2 border-[#cc7178]">
-            <h3 className="text-[#89023e] font-bold text-lg mb-4 text-center">Your Chaos History</h3>
+            <h3 className="text-[#7e22ce] font-bold text-lg mb-4 text-center">Your Chaos History</h3>
             <div className="space-y-2 max-h-48 overflow-y-auto">
               {savedScores.map((score, index) => (
                 <div key={index} className="flex justify-between items-center bg-[#f3e1dd] rounded-lg px-4 py-2">
-                  <span className="text-[#89023e] text-sm">{score.date}</span>
-                  <span className="text-[#cc7178] font-bold">{score.score}</span>
+                  <span className="text-[#7e22ce] text-sm">{score.date}</span>
+                  <span className="text-[#7e22ce] font-bold">{score.score}</span>
                 </div>
               ))}
             </div>
