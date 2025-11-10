@@ -31,10 +31,11 @@ const emojiStates = [
 
 export default function HotMessTracker() {
   const [sliders, setSliders] = useState<SliderData[]>([
-    { id: "late", label: "Late to class", value: 0, emoji: "⏰" },
+    { id: "late", label: "Didn't make it to class", value: 0, emoji: "⏰" },
     { id: "charger", label: "Lost charger", value: 0, emoji: "🔌" },
     { id: "text", label: "Sent risky text", value: 0, emoji: "📱" },
     { id: "procrastination", label: "Procrastination", value: 0, emoji: "🛋️" },
+    { id: "coffee", label: "Coffee dosage", value: 0, emoji: "☕" },
   ])
 
   const [savedScores, setSavedScores] = useState<Array<{ date: string; score: number }>>([])
